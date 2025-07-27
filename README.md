@@ -1,73 +1,119 @@
-# Welcome to your Lovable project
+# 🌾 e-Mandi Platform
 
-## Project info
+An all-in-one digital marketplace that connects farmers with buyers for the sale and purchase of agricultural produce — featuring real-time listings, order tracking, and category-based crop discovery.
 
-**URL**: https://lovable.dev/projects/7e095009-72f6-432d-b3a4-d95d0ef918bf
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-Active-brightgreen)
+![Made With](https://img.shields.io/badge/Made%20with-Node.js-339933?logo=node.js&logoColor=white)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Live Demo
+👉 [Visit e-Mandi Website](https://your-deployed-site-url.com)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7e095009-72f6-432d-b3a4-d95d0ef918bf) and start prompting.
+## 📸 Screenshots
 
-Changes made via Lovable will be committed automatically to this repo.
+| Farmer Dashboard | Buyer Dashboard |
+|------------------|-----------------|
+| ![Farmer Panel](assets/screenshots/farmer.png) | ![Buyer Panel](assets/screenshots/buyer.png) |
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📂 Project Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+e-mandi/
+│
+├── backend/
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ └── server.js
+│
+├── frontend/
+│ ├── components/
+│ ├── pages/
+│ └── App.js
+│
+├── public/
+├── .env
+├── package.json
+└── README.md
 
-Follow these steps:
+yaml
+Copy
+Edit
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## ✨ Features
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 👨‍🌾 Farmers
+- Register/Login
+- List crops with full details
+- Edit/Delete their listings
+- Track orders in real-time
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 🛒 Buyers
+- Browse/search crops by category
+- View farmer listings with location, quantity, price
+- Place orders and track delivery
 
-**Edit a file directly in GitHub**
+### ⚙️ Admin (if included)
+- Approve farmer listings
+- Manage users and orders
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 💻 Tech Stack
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Frontend**: React.js / HTML / CSS / Bootstrap / Tailwind
+- **Backend**: Node.js + Express.js
+- **Database**: MongoDB
+- **Authentication**: JWT + bcrypt
+- **Hosting**: (e.g., Render, Vercel, Railway, MongoDB Atlas)
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🔧 Installation
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+# Clone the repository
+git clone https://github.com/your-username/e-mandi.git
+cd e-mandi
 
-## How can I deploy this project?
+# Install backend dependencies
+cd backend
+npm install
 
-Simply open [Lovable](https://lovable.dev/projects/7e095009-72f6-432d-b3a4-d95d0ef918bf) and click on Share -> Publish.
+# Setup environment variables
+touch .env
+# Add your MONGO_URI, JWT_SECRET, etc.
 
-## Can I connect a custom domain to my Lovable project?
+# Run backend server
+npm start
 
-Yes, you can!
+# In a new terminal tab, run frontend
+cd ../frontend
+npm install
+npm start
+🌱 Environment Variables
+In your backend/.env file:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+ini
+Copy
+Edit
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+🛡️ License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+🙌 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+📞 Contact
+Made with ❤️ by [Your Name]
+📧 Email: your.email@example.com
+🌐 Portfolio: https://your-portfolio-link.com
